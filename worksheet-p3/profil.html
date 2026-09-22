@@ -20,12 +20,65 @@
 
     <main>
         <section id="books">
-            <h2>Books on My Shelf >_-</h2>
-            <p>Hii, this is a collection of books on my shelf and my reading journey!</p>
+            <h2>Books on My Shelf >⩊<</h2>
+            <p>Here are some of the books currently on my shelf.</p>
+
+            <table>
+                <caption>My Book Collection</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Year Published</th>
+                        <th scope="col">Reading Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Guns, Germs, and Steel</td>
+                        <td>Jared Diamond</td>
+                        <td>1997</td>
+                        <td>Currently Reading</td>
+                    </tr>
+                    <tr>
+                        <td>Na Willa</td>
+                        <td>Reda Gaudiamo</td>
+                        <td>2012</td>
+                        <td>Finished</td>
+                    </tr>
+                    <tr>
+                        <td>A Gentle Reminder</td>
+                        <td>Bianca Sparacino</td>
+                        <td>2022</td>
+                        <td>Currently Reading</td>
+                    </tr>
+                    <tr>
+                        <td>This is Me Letting You Go</td>
+                        <td>Heidi Priebe</td>
+                        <td>2025</td>
+                        <td>Want to Read</td>
+                    </tr>
+                    <tr>
+                        <td>When Things Don't Go Your Way</td>
+                        <td>Haemin Sunim</td>
+                        <td>2024</td>
+                        <td>Want to Read</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="madina-bookshelf.jpeg" 
+                     alt="A collection of books on my shelf." 
+                     width="640" 
+                     height="360"
+                     loading="lazy">
+                <figcaption>My current bookshelf and reading journey.</figcaption>
+            </figure>
         </section>
 
         <section id="reading">
-            <h2>My reading Corner ✧</h2>
+            <h2>My Reading Corner ✧</h2>
             <p>Welcome to my reading corner! Here, I share my thoughts and reflections on the books I've read. Feel free to explore and join me in this literary adventure!</p>
         </section>
 
@@ -38,8 +91,8 @@
                 <label for="author">Author:</label>
                 <input type="text" id="author" name="author" required>
 
-                <label for="genre">Genre:</label>
-                <input type="text" id="genre" name="genre">
+                <label for="year">Year Published:</label>
+                <input type="number" id="year" name="year" required>
 
                 <button type="submit">Add Book</button>
             </form>
@@ -48,7 +101,7 @@
     </main>
 
     <footer>
-        <p> Madina Nurbaiti · 25523224 · 2026</p>
+        <p>Madina Nurbaiti · 25523224 · 2026</p>
     </footer>
 </body>
 </html>
