@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookshelf ⋆˚꩜｡</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
+    <header class="container text-center py-5">
         <h1>My Bookshelf ⋆˚꩜｡</h1>
-        <p>Hii, this is a collection of books on my shelf and my reading journey!</p>
+        <p class="lead">Hii, this is a collection of books on my shelf and my reading journey!</p>
         <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#books">My Books</a></li>
-                <li><a href="#reading">Reading Corner</a></li>
-                <li><a href="#add-book">Add a Book</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#books">My Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reading">Reading Corner</a></li>
+                <li class="nav-item"><a class="nav-link" href="#add-book">Add a Book</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="books">
+    <main class="container">
+        <section id="books" class="mt-5">
             <h2>Books on My Shelf >⩊<</h2>
             <p>Here are some of the books currently on my shelf.</p>
 
-            <table>
+            <table class="table table-striped table-hover">
                 <caption>My Book Collection</caption>
                 <thead>
                     <tr>
@@ -69,32 +70,37 @@
 
             <figure>
                 <img src="madina-bookshelf.jpeg" 
-                     alt="A collection of books on my shelf." 
-                     width="640" 
-                     height="360"
+                     alt="A collection of books on my shelf."
+                     class="img-fluid rounded"
                      loading="lazy">
-                <figcaption>My current bookshelf and reading journey.</figcaption>
+                <figcaption class="mt-2">My current bookshelf and reading journey.</figcaption>
             </figure>
         </section>
 
-        <section id="reading">
+        <section id="reading" class="py-5">
             <h2>My Reading Corner ✧</h2>
-            <p>Welcome to my reading corner! Here, I share my thoughts and reflections on the books I've read. Feel free to explore and join me in this literary adventure!</p>
+            <p class="lead">Welcome to my reading corner! Here, I share my thoughts and reflections on the books I've read. Feel free to explore and join me in this literary adventure!</p>
         </section>
 
-        <section id="add-book">
+        <section id="add-book" lass="py-5">
             <h2>Add a Book ★</h2>
             <form action="#" method="post">
-                <label for="title">Book Title:</label>
-                <input type="text" id="title" name="title" required>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Book Title:</label>
+                    <input type="text" id="title" name="title" class="form-control" required>
+                </div>
 
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author:</label>
+                    <input type="text" id="author" name="author" class="form-control" required>
+                </div>
 
-                <label for="year">Year Published:</label>
-                <input type="number" id="year" name="year" min="0" required>
+                <div class="mb-3">
+                    <label for="year" class="form-label">Year Published:</label>
+                    <input type="number" id="year" name="year" class="form-control" min="0" required>
+                </div>
 
-                <button type="submit">Add Book</button>
+                <button type="submit" class="btn btn-primary">Add Book</button>
             </form>
         </section>
 

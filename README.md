@@ -14,3 +14,6 @@ My page topic: Books on my shelf
 
 ## Note on AI use
 AI helped me understand how to use GitHub and Check my code. I Wrote and tested the final page myself
+
+## Meeting 4 . Bootstrap
+i completed some of code with bootstrap
